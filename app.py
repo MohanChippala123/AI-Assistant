@@ -17,7 +17,7 @@ credentials = service_account.Credentials.from_service_account_info(gcp_credenti
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_service_account.json"
 
 # === CONFIGURATION === #
-PROJECT_ID = "Mohan-gcp"
+PROJECT_ID = "ai-app-assistant"
 LOCATION = "us-central1"
 MODEL_NAME = "gemini-2.5-flash"
 
