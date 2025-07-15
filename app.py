@@ -14,7 +14,7 @@ with open("gcp_service_account.json", "w") as f:
 
 # Explicitly set credentials for Vertex AI
 credentials = service_account.Credentials.from_service_account_info(gcp_credentials_dict)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp-key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_service_account.json"
 
 # === CONFIGURATION === #
 PROJECT_ID = "Mohan-gcp"
