@@ -8,7 +8,7 @@ import pandas as pd
 import json
 
 # Load GCP credentials from Streamlit secrets
-gcp_credentials_dict = st.secrets["private_key"]
+gcp_credentials_dict = st.secrets["gcp_key"]
 with open("gcp_service_account.json", "w") as f:
     json.dump(dict(gcp_credentials_dict), f)
 
