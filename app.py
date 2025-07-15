@@ -9,7 +9,7 @@ import json
 
 # Load GCP credentials from Streamlit secrets
 gcp_credentials_dict = st.secrets["gcp_key"]
-with open("gcp-key.json", "w") as f:
+with open("gcp_service_account.json", "w") as f:
     json.dump(dict(gcp_credentials_dict), f)
 
 # Explicitly set credentials for Vertex AI
@@ -17,7 +17,7 @@ credentials = service_account.Credentials.from_service_account_info(gcp_credenti
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp-key.json"
 
 # === CONFIGURATION === #
-PROJECT_ID = "hasini-gcp"
+PROJECT_ID = "Mohan-gcp"
 LOCATION = "us-central1"
 MODEL_NAME = "gemini-2.5-flash"
 
